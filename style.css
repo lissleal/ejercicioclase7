@@ -8,7 +8,7 @@
 
 main{
     display: flex;
-    margin: 40px 200px;
+    margin: 40px 0px;
     flex-wrap: wrap;
     gap: 60px;
     justify-content: center;
@@ -89,9 +89,8 @@ h2 {
 
 footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    justify-content: end;
+    gap: 50px;
     background-color: #00669F;
     padding: 20px;
     color: white;
@@ -100,7 +99,17 @@ footer {
 
 /* Media queries */
 
- @media (max-width: 1200px) {
+ @media (max-width: 768px) {
+    main{
+        margin: 40px 50px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+} 
+@media (max-width: 425px) {
     main{
         margin: 40px 50px;
     }
